@@ -98,15 +98,12 @@ public class VideoController : ControllerBase{
     }
 
     [HttpPut("{id}")]
-    public IActionResult Update(IFormFile newVideo, int id){
-        Video? video = VideoService.Get(id);
+    public IActionResult Update(IFormFile video, int id){
+        Video? prev_vid = VideoService.Get(id);
         if (video == null){
             return NotFound();
         }
-        (bool IsSuccess, string response) result = handleHerVideo.Upload(newVideo, video.Name);
-        if (!result.IsSuccess){
-            return BadRequest(result.response);
-        }
+        handleHerVideo.Upload(video.Path)
         return CreatedAtAction(nameof(Get), new {id = id}, video);
     }
     
