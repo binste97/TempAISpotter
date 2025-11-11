@@ -109,24 +109,25 @@
     ]
   },
   "packageFolders": {
-    "/home/toggian/.nuget/packages/": {}
+    "/Users/bjorninstefjord/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/toggian/AI-spotter/AI/OlympicAi/Backend/AI-spotter.csproj",
+      "projectUniqueName": "/Users/bjorninstefjord/Documents/Projects/TempAispotter/AI/OlympicAi/Backend/AI-spotter.csproj",
       "projectName": "AI-spotter",
-      "projectPath": "/home/toggian/AI-spotter/AI/OlympicAi/Backend/AI-spotter.csproj",
-      "packagesPath": "/home/toggian/.nuget/packages/",
-      "outputPath": "/home/toggian/AI-spotter/AI/OlympicAi/Backend/obj/",
+      "projectPath": "/Users/bjorninstefjord/Documents/Projects/TempAispotter/AI/OlympicAi/Backend/AI-spotter.csproj",
+      "packagesPath": "/Users/bjorninstefjord/.nuget/packages/",
+      "outputPath": "/Users/bjorninstefjord/Documents/Projects/TempAispotter/AI/OlympicAi/Backend/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/toggian/.nuget/NuGet/NuGet.Config"
+        "/Users/bjorninstefjord/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
+        "/opt/homebrew/Cellar/dotnet/9.0.8/libexec/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -145,7 +146,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net9.0": {
@@ -179,7 +180,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/9.0.8/libexec/sdk/9.0.109/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
