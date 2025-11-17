@@ -1,0 +1,138 @@
+/* ---------- Layout ---------- */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: system-ui, sans-serif;
+  background: #1e1e1e;
+  color: #f0f0f0;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.info {
+  max-width: 500px;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.uplaod{
+
+}
+
+/* ---------- Shared Panel Style ---------- */
+.panel {
+  border: 1px solid #f0f0f0;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background: #2a2a2a;
+  max-width: 500px;
+  width: 100%;
+}
+
+/* ---------- Video Card ---------- */
+.card {
+  composes: panel;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.uploadInfo {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.video {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-height: 40vh;
+  object-fit: contain;
+}
+
+/* ---------- Button ---------- */
+.button {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background: #13ec1f;
+  color: #000000;
+  cursor: pointer;
+  margin: 0.75rem auto 0;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.button:hover {
+  background: #666;
+  transform: translateY(-2px);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ---------- Verdict Section ---------- */
+.verdictBox {
+  composes: panel;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.verdictPre {
+  display: inline-block;
+  background: #1a1a1a;
+  color: #00ff99;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: left;
+  max-width: 90%;
+  overflow-x: auto;
+  font-family: "Courier New", monospace;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+/* ---------- Split Layout (side-by-side) ---------- */
+.split {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.videoSection,
+.verdictSection {
+  flex: 1;
+  max-width: 500px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .split {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .videoSection,
+  .verdictSection {
+    max-width: 100%;
+  }
+}
