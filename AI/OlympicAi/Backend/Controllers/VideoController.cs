@@ -5,10 +5,7 @@ using AI_spotter.Services;
 using Microsoft.AspNetCore.Mvc;
 using AI_spotter.PublicClasses;
 using System.Net.Http;
-<<<<<<< HEAD
-=======
 using System.Text.Json;
->>>>>>> feature/frontend-upload-analysis
 
 public interface IAiClientConnect{
     HttpClient AiClient {get;}
@@ -75,10 +72,6 @@ public class VideoController : ControllerBase{
             //HttpResponseMessage result = await AiClient.Connect(path);
             HttpResponseMessage result = await AiClient.AiClient.GetAsync($"http://localhost:8000/verdict?path={path}");
             if (result.IsSuccessStatusCode){
-<<<<<<< HEAD
-                Console.WriteLine("got results");
-=======
->>>>>>> feature/frontend-upload-analysis
                 return Ok(result.Content.ReadAsStringAsync().Result);
             }
             else{
@@ -90,11 +83,6 @@ public class VideoController : ControllerBase{
         }
     }
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> feature/frontend-upload-analysis
     [HttpPost]
     public IActionResult Create(IFormFile video){
         (bool IsSuccess, string response) videoResponse = handleHerVideo.Upload(video);
@@ -133,9 +121,6 @@ public class VideoController : ControllerBase{
         }
         return StatusCode(500);
     }
-<<<<<<< HEAD
-}
-=======
 
     [HttpDelete("path/{path}")]
     public IActionResult DeletePath(string path){
@@ -183,4 +168,3 @@ public class VideoController : ControllerBase{
         return verdict?.Value != null ? Ok(verdict.Value) : StatusCode(500);
     }
 }
->>>>>>> feature/frontend-upload-analysis
