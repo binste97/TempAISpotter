@@ -41,3 +41,4 @@ AI/OlympicAi/Backend/Videos/
 node_modules/
 dist/
 build/
+.idea/
