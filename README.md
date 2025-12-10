@@ -16,10 +16,12 @@ if all dependencies is not ready you need to run:
 
 
 1. Change folder to AI/OlympicAI
-2. run "uvicorn Backend.main:app --reload"
+2. run uvicorn Backend.main:app --reload
 
 #Terminal 3 - Frontend
 
 1. Change folder to frontend 
 2. run "npm install"
 3. run "npm run dev"
+
+To stop running processes, control + c
