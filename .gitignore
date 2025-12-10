@@ -1,8 +1,10 @@
-# ----------------------------------------
+# ========================================
 # Python
-# ----------------------------------------
+# ========================================
 venv/
+.venv/
 **/venv/
+**/.venv/
 __pycache__/
 *.pyc
 *.pyo
@@ -11,34 +13,50 @@ __pycache__/
 # Jupyter notebook checkpoints
 .ipynb_checkpoints/
 
-# ----------------------------------------
-# macOS
-# ----------------------------------------
-.DS_Store
+# ========================================
+# Node / Frontend
+# ========================================
+node_modules/
+dist/
+build/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
 
-# ----------------------------------------
-# .NET / C#
-# ----------------------------------------
+# ========================================
+# IDE / Editor
+# ========================================
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VS Code (optional, remove if you want to commit settings)
+.vscode/
+
+# ========================================
+# macOS system files
+# ========================================
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ========================================
+# C# / .NET (if applicable)
+# ========================================
 bin/
 obj/
 **/bin/
 **/obj/
 
-# ----------------------------------------
-# Videos - ignore all video files
-# ----------------------------------------
+# ========================================
+# Media files (video)
+# ========================================
 *.mp4
 *.mov
 *.avi
 *.mkv
 
-# Ignore entire videos folder
+# Ignore entire videos folder (confirm correct path)
 AI/OlympicAi/Backend/Videos/
-
-# ----------------------------------------
-# Node / Frontend
-# ----------------------------------------
-node_modules/
-dist/
-build/
-.idea/
